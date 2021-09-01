@@ -2,7 +2,7 @@ FROM ttbb/superset:nake
 
 LABEL maintainer="shoothzj@gmail.com"
 
-COPY mate /opt/sh/superset/mate
+COPY . /opt/sh/superset/mate
 
 WORKDIR /opt/sh/superset
 
