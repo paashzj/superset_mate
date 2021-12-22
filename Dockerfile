@@ -6,4 +6,4 @@ COPY . /opt/sh/superset/mate
 
 WORKDIR /opt/sh/superset
 
-CMD ["/usr/local/bin/dumb-init", "bash", "-vx", "/opt/sh/superset/mate/scripts/start.sh"]
+CMD ["/usr/bin/dumb-init", "bash", "-vx", "/opt/sh/superset/mate/scripts/start.sh"]
