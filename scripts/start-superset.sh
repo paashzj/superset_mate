@@ -1,3 +1,4 @@
 #!/bin/bash
 
-nohup superset run -h 0.0.0.0 -p 8088 --reload --debugger >>$SUPERSET_HOME/superset.stdout.log 2>>$SUPERSET_HOME/superset.stderr.log &
+mkdir -p $SUPERSET_HOME/logs
+nohup superset run -h 0.0.0.0 -p 8088 --reload --debugger >>$SUPERSET_HOME/logs/superset.stdout.log 2>>$SUPERSET_HOME/logs/superset.stderr.log &
